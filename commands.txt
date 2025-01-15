@@ -15,3 +15,7 @@
     5.2. npm install
 
     5.3. npm run dev
+
+# Link GitHub Matheys Battisti - Curso React #
+
+https://github.com/matheusbattisti/curso_react
