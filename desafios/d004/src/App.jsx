@@ -6,9 +6,9 @@ import UserDetails from './components/UserDetails';
 
 function App() {
   const users = [
-    { id: 0, name: 'João', age: 31, occupation: 'Developer' },
-    { id: 1, name: 'Maria', age: 15, occupation: 'Senior Developer' },
-    { id: 2, name: 'José', age: 30, occupation: 'Designer' }
+    { id: 1, name: 'João', age: 31, occupation: 'Developer' },
+    { id: 2, name: 'Maria', age: 15, occupation: 'Senior Developer' },
+    { id: 3, name: 'José', age: 30, occupation: 'Designer' }
   ];
 
   return (

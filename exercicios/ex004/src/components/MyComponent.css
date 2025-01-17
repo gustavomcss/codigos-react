@@ -1,0 +1,9 @@
+p {
+    color: green;
+    background-color: #000000;
+}
+
+p.myComponentParagraph {
+    color: #000000;
+    background-color: gold;
+}
