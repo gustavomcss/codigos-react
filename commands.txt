@@ -1,20 +1,24 @@
 # Step by Step - Initializing a React Project #
 
-1. npm create vite@latest
+1. Right click on folder and select "Open in Integrated Terminal"
 
-2. Give a Name to project.
+2. Run the command:
 
-3. Select framework = "React".
+    2.1. npm create vite@latest
 
-4. Select variant = "JavaScript".
+3. Give a Name to project
 
-5. Run the following commands:
+4. Select framework = "React"
 
-    5.1. cd <project_name>
+5. Select variant = "JavaScript"
 
-    5.2. npm install
+6. Run the following commands:
 
-    5.3. npm run dev
+    6.1. cd <project_name>
+
+    6.2. npm install
+
+    6.3. npm run dev
 
 # Link GitHub Matheys Battisti - Curso React #
 
