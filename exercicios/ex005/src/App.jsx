@@ -1,8 +1,8 @@
 // Import Style
-import './App.css'
+import './App.css';
 
 // Import Component
-import MyForm from './components/MyForm';
+import MyForm from './components/MyForm.jsx';
 
 function App() {
     return (

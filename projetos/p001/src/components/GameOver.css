@@ -1,0 +1,8 @@
+div.gameOver > p > span {
+    color: rgba(20, 20, 255);
+    font-weight: bold;
+}
+
+div.gameOver > button {
+    margin-top: 16px;
+}
