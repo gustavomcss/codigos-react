@@ -1,3 +1,9 @@
+# Link GitHub Matheys Battisti - Curso React #
+
+https://github.com/matheusbattisti/curso_react
+
+
+
 # Step by Step - Initializing a React Project #
 
 1. Right click on folder and select "Open in Integrated Terminal"
@@ -20,6 +26,34 @@
 
     6.3. npm run dev
 
-# Link GitHub Matheys Battisti - Curso React #
 
-https://github.com/matheusbattisti/curso_react
+
+# Step by Step - Initializing JSON Server #
+
+1. Create folder "data"
+
+2. Create file "db.json"
+
+3. Fill "db.json" file with data
+
+4. Right click on folder and select "Open in Integrated Terminal"
+
+5. Run the command:
+
+    5.1. npm install json-server
+
+5. Open the file "package.json"
+
+7. Add in object "scripts":
+
+    7.1. "json": "json-server -w data/db.json -p 5174"
+
+    7.2. OBS: If the file "db.json" is on the default directory "data/db.json", it can me ommited. The addition becomes:
+
+        7.2.1. "json": "json-server -p 5174"
+
+8. Run the following command:
+
+    8.1. npm run json
+
+    8.2. npm run dev 
