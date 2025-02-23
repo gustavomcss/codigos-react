@@ -12,7 +12,7 @@ const url = "http://localhost:5174/products"
 function App() {
     const [products, setProducts] = useState([]);
 
-    const {data} = useFetch(url);
+    const {data, httpConfig, loading, error} = useFetch(url);
 
     const [name, setName] = useState("");
     const [price, setPrice] = useState("");
@@ -36,7 +36,7 @@ function App() {
             price: price
         };
 
-        const response = await fetch(url, {
+        /* const response = await fetch(url, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -46,7 +46,9 @@ function App() {
 
         const addedProduct = await response.json();
 
-        setProducts((prevProducts) => [...prevProducts, addedProduct]);
+        setProducts((prevProducts) => [...prevProducts, addedProduct]); */
+
+        httpConfig(product, "POST");
 
         setName("");
         setPrice("");
@@ -58,13 +60,23 @@ function App() {
             <div className="App">
                 <h1>List of Products</h1>
 
-                <ul>
-                    {data && data.map((product) => (
-                        <li key={product.id}>
-                            {product.name} - R$: {product.price}
-                        </li>
-                    ))}
-                </ul>
+                {loading && 
+                    <p>Loading Data...</p>
+                }
+
+                {!loading && 
+                    <ul>
+                        {data && data.map((product) => (
+                            <li key={product.id}>
+                                {product.name} - R$: {product.price}
+                            </li>
+                        ))}
+                    </ul>
+                }
+
+                {error &&
+                    <p>{error}</p>
+                }
 
                 <div className="add-product">
                     <form onSubmit={handleSubmit}>
@@ -78,7 +90,15 @@ function App() {
                             <input type="number" name="price" value={price} onChange={(e) => setPrice(e.target.value)} />
                         </label>
 
-                        <input type="submit" value="Create" />
+                        {loading &&
+                            <input type="submit" value="Create" disabled />
+                        }
+
+                        {!loading &&
+                            <input type="submit" value="Create" />
+                        }
+
+                        
                     </form>
                 </div>
             </div>
