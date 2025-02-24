@@ -17,6 +17,6 @@ const CarDetails = ({brand, km, color, newCar}) => {
 
         </div>
     );
-}
+};
 
 export default CarDetails;

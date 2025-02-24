@@ -57,10 +57,10 @@ function App() {
             <ShowUserName name={userName} />
 
             {/* 
-      <CarDetails brand="BMW" km={9000} color="White" newCar={false} />
-      <CarDetails brand="Audi" km={10000} color="Black" newCar={true} />
-      <CarDetails brand="Mercedes" km={8000} color="Silver" newCar={false} />
-      */}
+            <CarDetails brand="BMW" km={9000} color="White" newCar={false} />
+            <CarDetails brand="Audi" km={10000} color="Black" newCar={true} />
+            <CarDetails brand="Mercedes" km={8000} color="Silver" newCar={false} />
+            */}
 
             {cars.map((car) => (
                 <CarDetails
