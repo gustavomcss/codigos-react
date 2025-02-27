@@ -1,0 +1,46 @@
+#root {
+    max-width: 1280px;
+    margin: 0px auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+
+
+div.App > h1 {
+    margin: 8px 0px;
+}
+
+
+
+ul.products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    list-style: none;
+}
+
+ul.products > li {
+    text-align: center;
+    width: 25%;    
+    padding: 16px;
+
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+}
+
+ul.products > li > a {
+    display: block;
+    margin: 16px auto 0px auto;
+    width: 25%;
+    
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+ul.products > li > a:hover {
+    color: rgb(0, 0, 255);
+    transition: 0.25s;
+}

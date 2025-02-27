@@ -1,0 +1,15 @@
+div.SearchForm > form {
+    margin-bottom: 16px;
+}
+
+div.SearchForm > form > input {
+    padding: 4px;
+}
+
+div.SearchForm > form > input[type="submit"] {
+    margin: 0px 8px;
+}
+
+div.SearchForm > form > input[type="submit"] {
+    cursor: pointer;
+}

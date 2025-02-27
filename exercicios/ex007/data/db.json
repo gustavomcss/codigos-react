@@ -1,0 +1,29 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Monitor",
+            "price": 100
+        },
+        {
+            "id": 2,
+            "name": "Keyboard",
+            "price": 200
+        },
+        {
+            "id": 3,
+            "name": "Mouse",
+            "price": 300
+        },
+        {
+            "id": 4,
+            "name": "SSD",
+            "price": 400
+        },
+        {
+            "id": 5,
+            "name": "Graphics Card",
+            "price": 1000
+        }
+    ]
+}

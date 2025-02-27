@@ -56,4 +56,14 @@ https://github.com/matheusbattisti/curso_react
 
     8.1. npm run json
 
-    8.2. npm run dev 
+    8.2. npm run dev
+
+
+
+# Step by Step - Initializing React Router DOM #
+
+1. Right click on folder and select "Open in Integrated Terminal"
+
+2. Run the command:
+
+    2.1. npm install react-router-dom
