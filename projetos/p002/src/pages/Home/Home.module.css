@@ -1,0 +1,44 @@
+.Home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Home h1 {
+    margin: 16px 0px;
+}
+
+.Home form {
+    margin-bottom: 24px;
+}
+
+.searchForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    max-width: 100%;
+    width: 60%;
+
+    margin: 8px 0px;
+}
+
+.searchForm input {
+    width: 40%;
+}
+
+.noPosts {
+    text-align: center;
+}
+
+.noPosts p {
+    margin-top: 24px;
+}
+
+.noPosts a {
+    display: inline-block;
+    
+    width: 176px;
+}

@@ -1,0 +1,33 @@
+.EditPost {
+    text-align: center;
+}
+
+.EditPost > h1 {
+    margin: 16px 0px;
+}
+
+.EditPost > h1 > span {
+    color: #AAAAAA;
+}
+
+.EditPost > p {
+    color: #AAAAAA;
+    
+    margin: 16px 0px;
+}
+
+.EditPost .previewTitle {
+    font-weight: bold;
+
+    margin-top: 24px;
+}
+
+.EditPost .previewImage {
+    display: inline-block;
+
+    max-width: 100%;
+
+    margin: 16px 0px;
+
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.5);
+}

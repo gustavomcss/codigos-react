@@ -1,0 +1,52 @@
+.PostDetail {
+    max-width: 720px;
+
+    margin-bottom: 32px;
+}
+
+.PostDetail .imageContainer {
+    background-color: rgba(211, 211, 211, 0.25);
+    max-width: 100%;
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.5);
+}
+
+.PostDetail .imageContainer img {
+    display: block;
+    max-width: 100%;
+    margin: 0px auto;
+}
+
+.PostDetail .infoContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+
+    margin-top: 8px;
+}
+
+.PostDetail .infoContainer .createdBy {
+    color: #444444;
+
+    font-size: 14px;
+    font-style: italic;
+}
+
+.PostDetail .tags {
+    display: flex;
+    gap: 8px;
+
+    margin-top: 16px;
+}
+
+.PostDetail .tags p span {
+    font-weight: bold;
+}
+
+.PostDetail .linkContainer {
+    text-align: center;
+}
+
+.PostDetail .linkContainer a {
+    display: inline-block;
+}

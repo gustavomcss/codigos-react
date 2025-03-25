@@ -1,0 +1,13 @@
+.Register {
+    text-align: center;
+}
+
+.Register > h1 {
+    margin: 16px 0px;
+}
+
+.Register > p {
+    color: #AAAAAA;
+    
+    margin: 16px 0px;
+}

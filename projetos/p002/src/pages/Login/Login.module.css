@@ -1,0 +1,13 @@
+.Login {
+    text-align: center;
+}
+
+.Login > h1 {
+    margin: 16px 0px;
+}
+
+.Login > p {
+    color: #AAAAAA;
+    
+    margin: 16px 0px;
+}

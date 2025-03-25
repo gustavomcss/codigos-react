@@ -1,0 +1,76 @@
+.Dashboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    margin-bottom: 32px;
+}
+
+.Dashboard > h1 {
+    margin: 16px 0px;
+}
+
+.Dashboard p {
+    color: #AAAAAA;
+    
+    margin: 16px 0px;
+}
+
+.Dashboard > div > a {
+    display: inline-block;
+}
+
+.Dashboard > .postHeader, .postRow {
+    display: flex;
+    justify-content: space-between;
+
+    width: 80%;
+
+    padding: 8px;
+}
+
+.Dashboard > .postHeader {
+    font-weight: bold;
+
+    border-bottom: 2px solid #CCCCCC;
+}
+
+.Dashboard > .postRow {
+    align-items: center;
+
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.Dashboard > .postRow > p {
+    color: #000000;
+}
+
+.Dashboard > .postRow > .actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.Dashboard > .postRow > .actions > button {    
+    margin: 0px;
+
+    transition: 0.5s;
+}
+
+.noPosts {
+    text-align: center;
+}
+
+.noPosts p {
+    margin-top: 24px;
+}
+
+.noPosts a {
+    display: inline-block;
+    
+    width: 176px;
+}

@@ -1,0 +1,13 @@
+.CreatePost {
+    text-align: center;
+}
+
+.CreatePost > h1 {
+    margin: 16px 0px;
+}
+
+.CreatePost > p {
+    color: #AAAAAA;
+    
+    margin: 16px 0px;
+}
