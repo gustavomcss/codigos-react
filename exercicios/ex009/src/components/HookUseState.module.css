@@ -1,0 +1,10 @@
+div.HookUseState {
+  visibility: visible;
+}
+
+div.HookUseState > div.section {
+    padding-bottom: 32px;
+
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}

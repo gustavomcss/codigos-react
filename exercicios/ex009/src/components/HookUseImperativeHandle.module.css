@@ -1,0 +1,10 @@
+div.HookUseImperativeHandle {
+    visibility: visible;
+}
+
+div.HookUseImperativeHandle > div.section {
+    padding-bottom: 32px;
+
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
