@@ -1,0 +1,12 @@
+div.Footer {
+    visibility: visible;
+}
+
+div.Footer > footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #212121;
+    height: 144px;
+}

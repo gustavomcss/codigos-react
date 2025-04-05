@@ -1,0 +1,17 @@
+div.NotFound {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 72vh;
+}
+
+div.NotFound > p {
+    margin: 16px 0px;
+}
+
+div.NotFound > p > a {
+    color: #0094F6;
+    font-weight: bold;
+}

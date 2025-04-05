@@ -1,3 +1,95 @@
 div.App {
     visibility: visible;
 }
+
+div.App > div.container {
+    min-height: 72vh;
+}
+
+/* Global Configuration */
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+
+    text-align: left;
+}
+
+label > span {
+    color: #AAAAAA;
+    font-weight: bold;
+    font-size: 12px;
+
+    margin: 8px 0px;
+}
+
+input {
+    background-color: #424242;
+
+    color: #FFFFFF;
+
+    border: 1px solid #505050;
+    border-radius: 4px;
+    padding: 12px;
+    margin: 8px 0px;
+
+    outline: none;
+}
+
+input[type="submit"] {
+    margin: 32px 0px;
+}
+
+input::placeholder {
+    color: #AAAAAA;
+}
+
+input:disabled {
+    background-color: #000000;
+    cursor: not-allowed;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.btn {
+    background-color: #0094F6;
+
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 16px;
+    opacity: 0.8;
+
+    border: none;
+    border-radius: 4px;
+    padding: 12px;
+
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+.btnCancel {
+    background-color: #CCCCCC;
+}
+
+.hide {
+    display: none;
+}
+
+.active {
+    font-weight: bold;
+}

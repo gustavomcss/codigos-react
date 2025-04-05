@@ -1,0 +1,81 @@
+/* AuthLogin */
+div.AuthLogin {
+    background-color: #000000;
+    max-width: 33%;
+
+    border: 1px solid #424242;
+    padding: 32px;
+    margin: 32px auto;
+}
+
+div.AuthLogin > h2 {
+    font-size: 32px;
+    text-align: center;
+}
+
+div.AuthLogin > p.subtitle {
+    color: #666666;
+
+    font-weight: bold;
+    text-align: center;
+
+    margin: 24px 0px;
+}
+
+div.AuthLogin > form {
+    padding: 16px 0px;
+    margin: 16px 0px;
+
+    border-bottom: 1px solid #424242;
+}
+
+div.AuthLogin > p {
+    text-align: center;
+}
+
+div.AuthLogin > p > a {
+    color: #0094F6;
+    font-weight: bold;
+}
+
+
+
+/* AuthRegister */
+div.AuthRegister {
+    background-color: #000000;
+    max-width: 33%;
+
+    border: 1px solid #424242;
+    padding: 32px;
+    margin: 32px auto;
+}
+
+div.AuthRegister > h2 {
+    font-size: 32px;
+    text-align: center;
+}
+
+div.AuthRegister > p.subtitle {
+    color: #666666;
+
+    font-weight: bold;
+    text-align: center;
+
+    margin: 24px 0px;
+}
+
+div.AuthRegister > form {
+    padding: 16px 0px;
+    margin: 16px 0px;
+
+    border-bottom: 1px solid #424242;
+}
+
+div.AuthRegister > p {
+    text-align: center;
+}
+
+div.AuthRegister > p > a {
+    color: #0094F6;
+    font-weight: bold;
+}
