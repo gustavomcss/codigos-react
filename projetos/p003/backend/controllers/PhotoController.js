@@ -1,7 +1,8 @@
 const Photo = require("../models/Photo");
 const User = require("../models/User");
 
-const mongoose = require("mongoose");
+const fs = require("fs");
+const path = require("path");
 
 // Insert a New Photo with an User Related to it
 const insertPhoto = async (req, res) => {
@@ -29,6 +30,16 @@ const insertPhoto = async (req, res) => {
     res.status(201).json(newPhoto);
 };
 
+// Helper function to delete an image file
+const deleteImageFile = (imagePath) => {
+    const fullPath = path.join(__dirname, "..", "uploads", "photos", imagePath);
+    fs.unlink(fullPath, (err) => {
+        if (err) {
+            console.error(`Error deleting file: ${fullPath}`, err);
+        }
+    });
+};
+
 // Remove a Photo from DB
 const deletePhoto = async (req, res) => {
     const { id } = req.params;
@@ -48,6 +59,9 @@ const deletePhoto = async (req, res) => {
             res.status(422).json({ errors: ["Unexpected error. Please try again later"] });
             return;
         }
+
+        // Delete the Image File
+        deleteImageFile(photo.image);
 
         await Photo.findByIdAndDelete(photo._id);
 

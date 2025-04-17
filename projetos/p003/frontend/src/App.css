@@ -3,7 +3,7 @@ div.App {
 }
 
 div.App > div.container {
-    min-height: 72vh;
+    min-height: 66vh;
 }
 
 /* Global Configuration */
@@ -83,7 +83,22 @@ a {
 }
 
 .btnCancel {
-    background-color: #CCCCCC;
+    background-color: #c94949;
+
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 16px;
+    opacity: 0.8;
+
+    border: none;
+    border-radius: 4px;
+    padding: 12px;
+    
+    cursor: pointer;
+}
+
+.btnCancel:hover {
+    opacity: 1;
 }
 
 .hide {

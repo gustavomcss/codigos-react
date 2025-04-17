@@ -1,0 +1,30 @@
+div.Message {
+    visibility: visible;
+}
+
+div.Message > div.message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #000000;
+    border-radius: 4px;
+
+    padding: 16px 0px;
+}
+
+div.Message > div.message.error {
+    background-color: #F8D7DA;
+
+    color: #721C24;
+
+    border-color: #F5C6CB;
+}
+
+div.Message > div.message.sucess {
+    background-color: #D4EDDA;
+    
+    color: #155724;
+
+    border-color: #C3E6CB;
+}

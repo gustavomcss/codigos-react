@@ -1,5 +1,5 @@
 // Import Style Module Page
-import styles from './Home.module.css';
+import styles from './Search.module.css';
 
 // Import React Libs
 import { useEffect } from 'react';
@@ -11,17 +11,21 @@ import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 
 // Import Redux Store Functions
-import { likePhoto, getPhotos } from '../../slices/photoSlice';
+import { searchPhotos, likePhoto } from '../../slices/photoSlice';
 
 // Import Hooks
 import { useResetComponentMessage } from '../../hooks/useResetComponentMessage';
+import { useQuery } from '../../hooks/useQuery';
 
 // Import Components
 import Loading from '../Loading/Loading';
 import LikeContainer from '../../components/LikeContainer';
 import PhotoItem from '../../components/PhotoItem';
 
-const Home = () => {
+const Search = () => {
+    const query = useQuery();
+    const search = query.get("q");
+
     // Allows to use the Redux Store Functions
     const dispatch = useDispatch();
 
@@ -40,8 +44,8 @@ const Home = () => {
 
     // Get Photos Data
     useEffect(() => {
-        dispatch(getPhotos());
-    }, [dispatch]);
+        dispatch(searchPhotos(search));
+    }, [dispatch, search]);
 
     if (loading) {
         return <Loading />;
@@ -49,7 +53,9 @@ const Home = () => {
 
     return (
         <>
-            <div className={styles.Home}>
+            <div className={styles.Search}>
+                <h2>You are searching for: <span>{search}</span></h2>
+
                 {photos && photos.map((photo) => (
                     <div key={photo._id}>
                         <PhotoItem photo={photo} />
@@ -62,7 +68,7 @@ const Home = () => {
 
                 {photos && photos.length === 0 && (
                     <div className={styles.noPhotos}>
-                        <h2>There aren't any photos yet. <Link to={`/users/${userAuth._id}`}>New Post</Link></h2>
+                        <h2>No results found for your search</h2>
                     </div>
                 )}
             </div>
@@ -70,4 +76,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default Search;

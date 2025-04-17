@@ -1,3 +1,31 @@
 div.Home {
-    visibility: visible;
+    width: 50%;
+    margin: 0px auto;
+}
+
+div.Home > div {
+    margin: 32px 0px;
+}
+
+div.Home > div > a {
+    display: inline-block;
+
+    text-align: center;
+
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+div.Home > div.noPhotos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 70vh;
+    overflow: hidden;
+}
+
+div.Home > div.noPhotos > h2 > a {
+    color: #0094F6;
 }

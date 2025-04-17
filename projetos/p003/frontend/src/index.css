@@ -8,6 +8,11 @@
     padding: 0px;
 }
 
+html::selection {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
 body {
     background-color: #000000;
     color: #ffffff;

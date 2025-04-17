@@ -1,0 +1,61 @@
+div.Navbar {
+    visibility: visible;
+}
+
+div.Navbar > nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #212121;
+    padding: 24px;
+}
+
+div.Navbar > nav > a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    font-weight: bold;
+    font-size: 24px;
+}
+
+div.Navbar > nav > * {
+    flex: 1;
+}
+
+div.Navbar > nav > form.searchForm {
+    position: relative;
+    width: 20%;
+}
+
+div.Navbar > nav > form.searchForm > input {
+    width: 100%;
+
+    border: none;
+    border-radius: 4px;
+    
+    margin: 0px;
+    padding-left: 32px;
+}
+
+div.Navbar > nav > form.searchForm > svg {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+}
+
+div.Navbar > nav > ul.navLinks {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 16px;
+}
+
+div.Navbar > nav > ul.navLinks > li > span {
+    cursor: pointer;
+}
+
+div.Navbar > nav > ul.navLinks > li > a > svg {
+    font-size: 20px;
+}

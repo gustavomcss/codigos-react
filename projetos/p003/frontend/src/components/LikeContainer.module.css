@@ -1,0 +1,24 @@
+div.LikeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    border-top: 1px solid #424242;
+    border-bottom: 1px solid #424242;
+    margin: 16px 0px;
+    padding: 16px 0px;
+}
+
+/* #home .like {
+    border: none;
+} */
+
+div.LikeContainer > svg {
+    font-size: 24px;
+
+    cursor: pointer;
+}
+
+
+

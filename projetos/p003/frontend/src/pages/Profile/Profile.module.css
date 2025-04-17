@@ -1,0 +1,176 @@
+div.Profile {
+    width: 50%;
+    margin: 0px auto;
+}
+
+div.Profile > div.profileHeader {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 32px;
+
+    border-bottom: 1px solid #424242;
+    padding: 16px;
+}
+
+div.Profile > div.profileHeader > img.profileImg {
+    display: block;
+    
+    object-fit: cover;
+    border-radius: 50%;
+
+    width: 150px;
+    height: 150px;
+    margin: 16px 0px;
+}
+
+div.Profile > div.profileHeader > img.profileImgX {
+    background-color: #FFFFFF;
+
+    display: block;
+    
+    object-fit: cover;
+    border-radius: 50%;
+
+    width: 150px;
+    height: 150px;
+    margin: 16px auto;
+}
+
+div.Profile > div.profileHeader > div.profileDescription {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+div.Profile > div.profileHeader > div.profileDescription > p {
+    color: #666666;
+}
+
+
+
+div.Profile > div.newPhoto {
+    background-color: #000000;
+
+    border: 1px solid #424242;
+    padding: 32px;
+    margin: 32px 24px;
+}
+
+div.Profile > div.newPhoto > h3 {
+    font-size: 24px;
+    text-align: center;
+}
+
+div.Profile > div.newPhoto > form {
+    padding: 16px 0px;
+    margin: 16px 0px;
+
+    border-bottom: 1px solid #424242;
+}
+
+div.Profile > div.newPhoto > form > label > input::file-selector-button {
+    background-color: #FFFFFF;
+    color: #000000;
+
+    border: none;
+    border-radius: 4px;
+    padding: 4px 8px;
+    margin: 0px 8px;
+
+    cursor: pointer;
+}
+
+
+
+div.Profile > div.editPhoto {
+    background-color: #000000;
+
+    border: 1px solid #424242;
+    padding: 32px;
+    margin: 32px 24px;
+}
+
+div.Profile > div.editPhoto > h3 {
+    font-size: 24px;
+    text-align: center;
+}
+
+div.Profile > div.editPhoto > img {
+    object-fit: cover;
+    aspect-ratio: 1;
+
+    width: 100%;
+    margin-top: 16px;
+}
+
+div.Profile > div.editPhoto > form {
+    padding: 16px 0px;
+    margin-bottom: 16px;
+
+    border-bottom: 1px solid #424242;
+}
+
+div.Profile > div.editPhoto > form > input[type="submit"] {
+    margin-bottom: 8px;
+}
+
+div.Profile > div.editPhoto > form > button {
+    margin-bottom: 32px;
+}
+
+
+
+div.Profile > div.userPhotos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 32px 0px;
+}
+
+div.Profile > div.userPhotos > h3 {
+    font-size: 24px;
+    text-align: center;
+}
+
+div.Profile > div.userPhotos > div.photosContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    margin: 16px 0px;
+}
+
+div.Profile > div.userPhotos > div.photosContainer > div.photo {
+    max-width: 32.6%;
+
+    border: 1px solid #424242;
+    padding: 8px;
+}
+
+div.Profile > div.userPhotos > div.photosContainer > div.photo > img {
+    object-fit: cover;
+    aspect-ratio: 1;
+
+    border-radius: 8px;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+div.Profile > div.userPhotos > div.photosContainer > div.photo > div.actions {
+    display: flex;
+    justify-content: space-around;
+
+    padding: 8px;
+}
+
+div.Profile > div.userPhotos > div.photosContainer > div.photo > div.actions > svg {
+    cursor: pointer
+}
+
+div.Profile > div.userPhotos > div.photosContainer > div.photo > a {
+    display: block;
+    
+    text-align: center;
+}

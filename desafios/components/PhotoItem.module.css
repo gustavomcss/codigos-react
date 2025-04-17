@@ -1,0 +1,35 @@
+div.PhotoItem {
+    visibility: visible;
+}
+
+div.PhotoItem > img {
+    width: 100%;
+
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px 0px rgba(255,255,255,1);
+}
+
+div.PhotoItem > h2 {
+    font-size: 24px;
+    text-align: center;
+
+    margin: 16px 0px;
+}
+
+div.PhotoItem > p.photoAuthor {
+    color: #666666;
+    font-size: 16px;
+    text-align: center;
+
+    margin: 16px 0px;
+}
+
+div.PhotoItem > p.photoAuthor > a:hover {
+    text-decoration: underline;
+}
+
+div.PhotoItem > p.photoAuthor > svg {
+    fill: #FFFFFF;
+
+    margin-bottom: -2px;
+}

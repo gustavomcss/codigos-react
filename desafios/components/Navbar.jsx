@@ -40,22 +40,14 @@ const Navbar = () => {
         navigate("/login");
     };
 
-    const handleSearch = (e) => {
-        e.preventDefault();
-
-        if (search) {
-            return navigate(`/search?q=${search}`);
-        }
-    };
-
     return (
         <>
             <div className={styles.Navbar}>
                 <nav>
                     <Link to="/"><img src={logo} />ReactGram</Link>
 
-                    <form className={styles.searchForm} onSubmit={handleSearch}>
-                        <input type="text" placeholder="Search..." value={search} onChange={(e) => setSearch(e.target.value)} />
+                    <form className={styles.searchForm}>
+                        <input type="text" placeholder="Search..." value={search} onChange={(e) => setSearch(e.target.value)}/>
                         <BsSearch />
                     </form>
 
