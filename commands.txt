@@ -48,9 +48,9 @@ https://github.com/matheusbattisti/curso_react
 
     7.1. "json": "json-server -w data/db.json -p 5174"
 
-    7.2. OBS: If the file "db.json" is on the default directory "data/db.json", it can me ommited. The addition becomes:
+        7.1.1. OBS: If the file "db.json" is on the default directory "data/db.json", it can me ommited. The addition becomes:
 
-        7.2.1. "json": "json-server -p 5174"
+            7.1.1.1. "json": "json-server -p 5174"
 
 8. Run the following command:
 
@@ -67,3 +67,33 @@ https://github.com/matheusbattisti/curso_react
 2. Run the command:
 
     2.1. npm install react-router-dom
+
+
+
+# Step by Step - Initilizing API
+
+1. Create folder to backend / API
+
+2. Right click on folder and select "Open in Integrated Terminal"
+
+3. Run the command:
+
+    3.1. npm init -y
+
+    3.2. npm install express nodemon
+
+4. Open the file "package.json"
+
+5. Add in object "scripts":
+
+    5.1. "server": "nodemon ./<FileName>.js <Adress> <PORT>"
+
+        5.1.1. OBS: Usually, <FileName>.js can be:
+
+            5.1.1.1. App.js
+
+        5.1.2. OBS: For tests, <Adress> and <PORT> can be:
+
+            5.1.2.1. localhost 5000
+
+6. Create file "<FileName>.js"
