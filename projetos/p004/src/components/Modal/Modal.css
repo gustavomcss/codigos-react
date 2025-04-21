@@ -1,0 +1,33 @@
+/* CSS Modal */
+
+div.Modal > div.fade {
+    background-color: #000000;
+    opacity: 0.25;
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+}
+
+div.Modal > div.modal {
+    background-color: #FFFFFF;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+
+    z-index: 1;
+
+    margin: 0px auto;
+    padding: 16px 32px;
+    width: 432px;
+    height: 432px;
+}

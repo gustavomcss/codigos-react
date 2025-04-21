@@ -1,0 +1,48 @@
+/* CSS TaskForm */
+
+div.TaskForm {
+    width: 100%;
+}
+
+div.TaskForm > form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    margin: 0px auto;
+}
+
+div.TaskForm > form > label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    text-align: left;
+
+    font-weight: bold;
+}
+
+div.TaskForm > form > label > input {
+    border: 1px solid #282C34;
+    border-radius: 4px;
+
+    padding: 8px 16px;
+}
+
+div.TaskForm > form > input[type="submit"] {
+    background-color: #61DAFB;
+    color: #000000;
+    
+    border: 1px solid #61DAFB;
+    border-radius: 4px;
+
+    padding: 12px 16px;
+
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+div.TaskForm > form > input[type="submit"]:hover {
+    background-color: #FFFFFF;
+    color: #282C34;
+}

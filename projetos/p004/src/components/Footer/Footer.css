@@ -1,0 +1,18 @@
+/* CSS Footer */
+
+footer {
+    background-color: #282C34;
+    color: #FFFFFF;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 160px;
+}
+
+footer > p > span {
+    color: #61DAFB;
+
+    font-weight: bold;
+}

@@ -1,0 +1,47 @@
+/* CSS TaskList */
+
+div.TaskList {
+    width: 100%;
+}
+
+div.TaskList > div.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid #CCCCCC;
+
+    margin: 0px auto;
+    padding: 16px;
+}
+
+div.TaskList > div.task > div.task-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    text-align: left;
+}
+
+div.TaskList > div.task > div.task-actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+div.TaskList > div.task > div.task-actions > i {
+    background-color: #282C34;
+    color: #FFFFFF;
+
+    border-radius: 4px;
+    padding: 4px;
+
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+div.TaskList > div.task > div.task-actions > i:hover {
+    color: #61DAFB;
+}
