@@ -1,0 +1,53 @@
+/* CSS Navbar */
+
+nav.Navbar {
+    background-color: #121212;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 16px 32px;
+}
+
+nav.Navbar > h1 > a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+nav.Navbar > form {
+    display: flex;
+    gap: 8px;
+}
+
+nav.Navbar > form > input {
+    border: none;
+    border-radius: 4px;
+
+    padding: 4px 8px;
+}
+
+nav.Navbar > form > button {
+    background-color: #F7D354;
+    color: #000000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 16px;
+
+    border: 2px solid #F7D354;
+    border-radius: 4px;
+
+    padding: 4px;
+
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+nav.Navbar > form > button:hover {
+    background-color: transparent;
+    color: #F7D354;
+}

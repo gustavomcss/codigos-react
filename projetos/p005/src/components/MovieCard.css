@@ -1,0 +1,60 @@
+/* CSS MovieCard */
+
+div.MovieCard {
+    background-color: #121212;
+    color: #FFFFFF;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+
+    padding: 16px;
+    width: 30%;
+}
+
+div.MovieCard > img {
+    max-width: 100%;
+}
+
+div.MovieCard > div.movie-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+div.MovieCard > div.movie-info > h2 {
+    font-size: 20px;
+}
+
+div.MovieCard > div.movie-info > p {
+    display: flex;
+    gap: 8px;
+}
+
+div.MovieCard > div.movie-info > p > svg {
+    fill: #F7D354;
+}
+
+div.MovieCard > a {
+    background-color: #F7D354;
+    color: #000000;
+
+    text-align: center;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    border: 2px solid #F7D354;
+    border-radius: 4px;
+
+    padding: 8px 4px;
+
+    transition: 0.5s;
+}
+
+div.MovieCard > a:hover {
+    background-color: transparent;
+    color: #F7D354;
+}

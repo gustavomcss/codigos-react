@@ -1,0 +1,51 @@
+/* CSS Movie */
+
+div.Movie {
+    color: #FFFFFF;
+
+    display: flex;
+    flex-direction: column;
+
+    margin: 32px auto;
+    max-width: 560px;
+}
+
+div.Movie > div.info > h3 > svg {
+    color: #F7D354;
+
+    font-size: 24px;
+}
+
+div.Movie > div.MovieCard {
+    gap: 16px;
+
+    text-align: center;
+
+    width: 100%;
+}
+
+div.Movie > p.tagline {
+    text-align: center;
+
+    font-size: 20px;
+
+    margin: 16px 0px;
+}
+
+div.Movie > div.info {
+    margin: 16px 0px;
+}
+
+div.Movie > div.info > h3 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    margin: 8px 0px;
+}
+
+div.Movie > div.description > p {
+    text-align: justify;
+
+    line-height: 24px;
+}

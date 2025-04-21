@@ -1,0 +1,21 @@
+/* CSS Home */
+
+div.Home > h2.title {
+    color: #FFFFFF;
+
+    font-size: 32px;
+    text-align: center;
+
+    margin: 32px 0px 16px 0px;
+}
+
+div.Home > div.movies-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 32px;
+
+    margin: 0px auto;
+    padding: 32px;
+    max-width: 1200px;
+}

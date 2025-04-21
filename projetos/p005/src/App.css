@@ -1,0 +1,18 @@
+/* CSS App */
+
+body {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+a {
+    color: #F7D354;
+
+    text-decoration: none;
+
+    transition: 0.5s;
+}
+
+a:hover {
+    color: #B8930C;
+}
