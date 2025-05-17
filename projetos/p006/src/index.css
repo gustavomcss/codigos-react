@@ -1,0 +1,11 @@
+/* StyleSheet: Global */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F6F7F8;
+}

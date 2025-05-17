@@ -1,0 +1,80 @@
+/* StyleSheet: Item */
+
+div.Item {
+    display: flex;
+
+    width: 100%;
+    max-width: 416px;
+
+    transition: 0.25s;
+
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+
+    box-shadow: 0rem 0rem 0.50rem rgba(0, 0, 0, 0.25);
+}
+
+div.Item:hover {
+    scale: 1.05;
+}
+
+div.Item > img {
+    border-radius: 8px;
+
+    width: 40%;
+    height: 100%;
+    aspect-ratio: 1/1;
+}
+
+div.Item > div.item-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 8px 12px;
+    width: 100%;
+}
+
+div.Item > div.item-container > div.item-info > p.name {
+    font-weight: bold;
+
+    margin-bottom: 4px;
+}
+
+div.Item > div.item-container > div.item-info > p.description {
+    color: #787878;
+
+    font-size: 12px;
+    text-align: justify;
+}
+
+div.Item > div.item-container > div.item-chart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 8px;
+}
+
+div.Item > div.item-container > div.item-chart > span.price {
+    font-weight: bold;
+}
+
+div.Item > div.item-container > div.item-chart > button#add-to-cart {
+    background-color: #000000;
+
+    padding: 4px 32px;
+
+    border-radius: 4px;
+
+    cursor: pointer
+}
+
+div.Item > div.item-container > div.item-chart > button#add-to-cart > svg {
+    fill: #FFFFFF;
+
+    font-size: 16px;
+    text-align: center;
+
+    vertical-align: middle;
+}

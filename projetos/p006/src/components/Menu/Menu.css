@@ -1,0 +1,33 @@
+/* StyleSheet: Menu */
+
+main.Menu {
+    padding: 48px 16px;
+}
+
+main.Menu > h2 {
+    text-align: center;
+
+    margin-bottom: 32px;
+}
+
+main.Menu > div.menu-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 24px;
+
+    margin-bottom: 32px;
+}
+
+
+
+@media (min-width: 768px) {
+    main.Menu > h2 {
+        font-size: 32px;
+    }
+
+    main.Menu > div.menu-container {
+        grid-template-columns: auto auto;
+        justify-content: center;
+    }
+}
