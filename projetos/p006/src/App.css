@@ -5,3 +5,9 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
+
+div.App button {
+    cursor: pointer;
+
+    box-shadow: 0rem 0rem 0.25rem rgba(0, 0, 0, 0.25);
+}

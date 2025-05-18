@@ -4,12 +4,18 @@ import './Footer.css';
 // Import React Icons
 import { MdOutlineShoppingCart } from "react-icons/md";
 
-const Footer = () => {
+// Import Contexts
+import { useCart } from '../../contexts/CartContext.jsx';
+
+const Footer = ({ onCartOpen }) => {
+    
+    const { cart } = useCart();
+
     return (
         <>
             <footer className="Footer">
-                <button id="cart">
-                    (<span>0</span>) See My Chart <MdOutlineShoppingCart />
+                <button id="cart" onClick={onCartOpen} >
+                    (<span id="cart-count">{Object.keys(cart).length}</span>) See My Chart <MdOutlineShoppingCart />
                 </button>
             </footer>
         </>

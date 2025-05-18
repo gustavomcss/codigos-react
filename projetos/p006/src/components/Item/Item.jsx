@@ -4,7 +4,12 @@ import './Item.css';
 // Import React Icons
 import { MdOutlineAddShoppingCart } from "react-icons/md";
 
-const Item = ({ img, alt, description, price }) => {
+// Import Contexts
+import { useCart } from '../../contexts/CartContext.jsx';
+
+const Item = ({ img, name, description, price }) => {
+
+    const { addItemToCart } = useCart();
 
     const formatPrice = (price) => {
         const number = Number(price);
@@ -19,20 +24,27 @@ const Item = ({ img, alt, description, price }) => {
         );
     };
 
+    const onGetItem = (e) => {
+        const itemName = e.currentTarget.getAttribute('data-name');
+        const itemPrice = parseFloat(e.currentTarget.getAttribute('data-price'));
+
+        addItemToCart(itemName, itemPrice);    
+    };
+
     return (
         <>
             <div className="Item">
-                <img src={img} alt={alt} />
+                <img src={img} alt={name} />
 
                 <div className="item-container">
                     <div className="item-info">
-                        <p className="name">{alt}</p>
+                        <p className="name">{name}</p>
                         <p className="description">{description}</p>
                     </div>
 
                     <div className="item-chart">
                         <span className="price">{formatPrice(price)}</span>
-                        <button id="add-to-cart" data-name={alt} data-price={price} ><MdOutlineAddShoppingCart /></button>
+                        <button id="add-to-cart" data-name={name} data-price={price} onClick={onGetItem} ><MdOutlineAddShoppingCart /></button>
                     </div>
                 </div>
             </div>

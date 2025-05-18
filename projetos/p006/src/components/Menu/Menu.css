@@ -12,7 +12,8 @@ main.Menu > h2 {
 
 main.Menu > div.menu-container {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 416px));
+    justify-content: center;
     justify-items: center;
     gap: 24px;
 
@@ -24,10 +25,5 @@ main.Menu > div.menu-container {
 @media (min-width: 768px) {
     main.Menu > h2 {
         font-size: 32px;
-    }
-
-    main.Menu > div.menu-container {
-        grid-template-columns: auto auto;
-        justify-content: center;
     }
 }

@@ -5,6 +5,7 @@ div.Item {
 
     width: 100%;
     max-width: 416px;
+    height: 168px;
 
     transition: 0.25s;
 
@@ -19,11 +20,13 @@ div.Item:hover {
 }
 
 div.Item > img {
+    width: 45%;
+
     border-radius: 8px;
 
-    width: 40%;
+    /* width: 40%;
     height: 100%;
-    aspect-ratio: 1/1;
+    aspect-ratio: 1/1; */
 }
 
 div.Item > div.item-container {
@@ -32,7 +35,7 @@ div.Item > div.item-container {
     justify-content: space-between;
 
     padding: 8px 12px;
-    width: 100%;
+    width: 60%;
 }
 
 div.Item > div.item-container > div.item-info > p.name {
@@ -66,8 +69,6 @@ div.Item > div.item-container > div.item-chart > button#add-to-cart {
     padding: 4px 32px;
 
     border-radius: 4px;
-
-    cursor: pointer
 }
 
 div.Item > div.item-container > div.item-chart > button#add-to-cart > svg {

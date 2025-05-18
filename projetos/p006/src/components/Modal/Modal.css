@@ -1,9 +1,13 @@
 /* StyleSheet: Modal */
 
+div.Modal {
+    display: none;
+}
+
 div.Modal > div.mask {
     background-color: rgba(0, 0, 0, 0.5);
 
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
 
@@ -37,11 +41,116 @@ div.Modal > div.mask > div.modal > h2 {
 div.Modal > div.mask > div.modal > div.cart-items {
     display: flex;
     flex-direction: column;
+    gap: 16px;
+}
+
+div.Modal > div.mask > div.modal > div.cart-items > div.item {
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+
+    padding: 0px 8px 8px 8px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+div.Modal > div.mask > div.modal > div.cart-items > div.item > div.empty-cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    
+    width: 100%;
+}
+
+div.Modal > div.mask > div.modal > div.cart-items > div.item > div.empty-cart > svg {
+    fill: #787878;
+
+    width: 32px;
+    height: 32px;
+}
+
+div.Modal > div.mask > div.modal > div.cart-items > div.item > div.empty-cart > p {
+    color: #787878;
+
+    text-align: center;
+
+    width: 100%;
+}
+
+div.Modal > div.mask > div.modal > div.cart-items > div.item > div.item-info > p.info-name {
+    font-weight: bold;
+}
+
+div.Modal > div.mask > div.modal > div.cart-items > div.item > div.item-info > p.info-price {
+    font-style: italic;
+}
+
+div.Modal > div.mask > div.modal > div.cart-items > div.item > div.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+div.Modal > div.mask > div.modal > div.cart-items > div.item > div.buttons-container > div.quantity-container {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+
+    overflow: hidden;
+
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+div.Modal > div.mask > div.modal > div.cart-items > div.item > div.buttons-container > div.quantity-container > button {
+    background-color: #808080;
+
+    color: #FFFFFF;
+
+    width: 24px;
+
+    border-radius: 4px;
+    border: none;
+}
+
+div.Modal > div.mask > div.modal > div.cart-items > div.item > div.buttons-container > div.quantity-container > button > svg {
+    width: 16px;
+    height: 16px;
+
+    vertical-align: middle;
+}
+
+div.Modal > div.mask > div.modal > div.cart-items > div.item > div.buttons-container > div.quantity-container > span.info-qnt {
+    font-weight: bold;;
+}
+
+div.Modal > div.mask > div.modal > div.cart-items > div.item > div.buttons-container > button#remove-btn {
+    background-color: rgb(255, 0, 0);
+
+    color: #FFFFFF;
+
+    padding: 0px 4px;
+
+    border-radius: 4px;
+    border: none;
+}
+
+div.Modal > div.mask > div.modal > div.cart-items > div.item > div.buttons-container > button#remove-btn > svg {
+    width: 16px;
+    height: 16px;
+
+    vertical-align: middle;
 }
 
 div.Modal > div.mask > div.modal > p.cart-total {
     font-weight: bold;
+}
+
+div.Modal > div.mask > div.modal > p.cart-total > span {
+    color: rgb(22, 163, 74);
+
+    font-style: italic;
 }
 
 div.Modal > div.mask > div.modal > p.address {
@@ -69,13 +178,15 @@ div.Modal > div.mask > div.modal > div.buttons-container {
     justify-content: space-between;
     align-items: center;
 
-    margin-top: 32px;
+    margin-top: 24px;
     width: 100%;
 }
 
 div.Modal > div.mask > div.modal > div.buttons-container > button#close-modal {
     background-color: rgb(254, 32, 32);
     color: #FFFFFF;
+
+    font-weight: bold;
 
     padding: 8px 24px;
 
@@ -86,6 +197,8 @@ div.Modal > div.mask > div.modal > div.buttons-container > button#close-modal {
 div.Modal > div.mask > div.modal > div.buttons-container > button#checkout {
     background-color: rgb(22, 163, 74);
     color: #FFFFFF;
+
+    font-weight: bold;
 
     padding: 8px 24px;
 
